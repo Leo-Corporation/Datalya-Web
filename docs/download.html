@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social networks meta -->
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://leocorporation.dev/img/social.png">
+    <meta name="twitter:description" content="Datalya is a modern and simple database manager for Windows.">
+    <meta name="twitter:title" content="Download | Datalya">
+
+    <!-- Facebook/Linkedin -->
+    <meta property="og:description" content="Datalya is a modern and simple database manager for Windows.">
+    <meta property="og:image" content="https://leocorporation.dev/img/social.png">
+    <meta property="og:title" content="Download | Datalya">
+
+    <meta name="description" content="Datalya is a modern and simple database manager for Windows.">
+    <title>Download | Datalya</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="favicon.png" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('fonts/FluentSystemIcons-Filled.ttf');
+    </style>
+</head>
+
+<body id="body" style="font-family: Montserrat, sans-serif;">
+    <header id="header" x-data="{ mobileMenuOpen : false }" style="z-index: 1000;"
+        class="backdrop-filter transition backdrop-blur-lg flex flex-wrap flex-row justify-between md:items-center md:space-x-4 sticky top-0 w-full py-6 px-6">
+        <a href="#" class="block">
+            <span class="sr-only">Datalya</span>
+            <img alt="Image" class="h-6 md:h-8" src="img/Datalya.png" alt="Logo" title=" Logo">
+        </a>
+        <button @click="mobileMenuOpen = !mobileMenuOpen"
+            class="inline-block md:hidden w-8 h-8 bg-gray-200 text-gray-600 p-1">
+            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+        <nav class="absolute md:relative top-16 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0"
+            :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
+            <a href=""
+                class="block py-1 text-gray-600 transition p-4 rounded-xl hover:text-white hover:bg-blue-700">Home</a>
+            <a href="#"
+                class="block py-1 text-white transition bg-blue-700 p-4 rounded-xl hover:text-white hover:bg-blue-700">Download</a>
+            <a href="about"
+                class="block py-1 text-gray-600 transition p-4 rounded-xl hover:text-white hover:bg-blue-700">About</a>
+        </nav>
+    </header>
+
+    <div id="banner-header" class="m-16 flex flex-row items-center justify-between">
+        <div class="flex flex-col items-start">
+            <h1 class="text-4xl ttext-left font-bold">Download <span class="text-blue-700">Datalya</span>
+            </h1>
+            <p id="downloadTxt">Version X</p>
+            <a class="px-8 py-4 my-4 text-white font-bold bg-blue-700 transition rounded-xl hover:bg-blue-800"
+                href="https://bit.ly/DownloadDatalya">Download</a>
+        </div>
+        <img class="hidden sm:block" src="img/Datalya.png" style="max-height: 200px;">
+    </div>
+
+    <div id="download" class="m-8 flex flex-col p-8 items-start">
+        <h1 class="text-3xl font-bold">System Requirements</h1>
+        <table class="table-auto my-4 text-blue-700">
+            <tr>
+                <th class="border border-blue-700 p-2 bg-blue-100"></th>
+                <th class="border border-blue-700 p-2 bg-blue-100">Minimum</th>
+                <th class="border border-blue-700 p-2 bg-blue-100">Recommanded</th>
+            </tr>
+            <tr>
+                <td class="border border-blue-700 p-2 font-bold">Stockage</td>
+                <td class="border border-blue-700 p-2">1GB of storage</td>
+                <td class="border border-blue-700 p-2">1GB of storage</td>
+            </tr>
+            <tr>
+                <td class="border border-blue-700 p-2 font-bold">Memory</td>
+                <td class="border border-blue-700 p-2">2GB RAM</td>
+                <td class="border border-blue-700 p-2">4GB RAM</td>
+            </tr>
+            <tr>
+                <td class="border border-blue-700 p-2 font-bold">Operating System</td>
+                <td class="border border-blue-700 p-2">Windows 7</td>
+                <td class="border border-blue-700 p-2">Windows 10 and +</td>
+            </tr>
+            <tr>
+                <td class="border border-blue-700 p-2 font-bold">Framework</td>
+                <td class="border border-blue-700 p-2">.NET 5</td>
+                <td class="border border-blue-700 p-2">.NET 5</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <footer class="grid grid-cols-1 sm:grid-cols-2 p-16 bg-blue-700 text-white">
+        <div class="grid grid-rows-3">
+            <p id="copyright">© Léo Corporation</p>
+            <a href="https://privacy.leocorporation.dev/" class="hover:underline">Privacy Policy</a>
+        </div>
+        <div id="social-networks" class="grid grid-rows-3 mt-4 sm:mt-0">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/"
+                class="flex flex-row items-center">
+                <img alt="Image" class="h-6 mr-5"
+                    src="https://img.icons8.com/fluent-systems-filled/48/FFFFFF/github.png" />
+                <p class="font-semibold">GitHub</p>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/LeoCorpNews"
+                class="flex flex-row items-center">
+                <img alt="Image" class="h-6 mr-5"
+                    src="https://img.icons8.com/fluent-systems-filled/48/FFFFFF/twitter.png" />
+                <p class="font-semibold">Twitter</p>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg"
+                class="flex flex-row items-center">
+                <img alt="Image" class="h-6 mr-5"
+                    src="https://img.icons8.com/fluent-systems-filled/48/FFFFFF/youtube.png" />
+                <p class="font-semibold">YouTube</p>
+            </a>
+        </div>
+    </footer>
+
+    <script src="scripts/copyright.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/getversion.js"></script>
+
+</body>
+
+</html>
