@@ -24,6 +24,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="favicon.png" />
+    <link href="css/animations.css" rel="stylesheet">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
@@ -75,26 +76,26 @@
         </nav>
     </header>
 
-    <div id="banner-header" class="m-16 flex flex-row items-center justify-between">
+    <div id="banner-header" class="fadeIn m-16 flex flex-row items-center justify-between">
         <h1 class="text-4xl text-center sm:text-left font-bold">A <span class="text-blue-700">modern</span> and <span
                 class="text-blue-700">simple</span> database manager</h1>
         <img class="hidden sm:block" src="img/Datalya.png" style="max-height: 200px;">
     </div>
 
     <div id="cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center xl:mx-60">
-        <div class="p-8 mx-2 my-4 md:my-8 rounded-lg shadow-lg" style="max-width: 350px;">
+        <div class="slideInUp p-8 mx-2 my-4 md:my-8 rounded-lg shadow-lg" style="max-width: 350px;">
             <h1 class="text-2xl text-blue-700" style="font-family: FluentIconsFilled;"></h1>
             <h2 class="text-2xl font-bold">Familar</h2>
             <p>Datalya was made to be familiar and easy to use for everyone, making database creation and management
                 easier. You achieve more with Datalya.</p>
         </div>
-        <div class="p-8 mx-2 my-4 md:my-8 rounded-lg shadow-lg" style="max-width: 350px;">
+        <div class="slideInUp delay-1 p-8 mx-2 my-4 md:my-8 rounded-lg shadow-lg" style="max-width: 350px;">
             <h1 class="text-2xl text-blue-700" style="font-family: FluentIconsFilled;"></h1>
             <h2 class="text-2xl font-bold">Simplified experience</h2>
             <p>Every part of Datalya was made to be simpe, and easy to comprehend, so you can focus on your database
                 instead of wondering how to do someting.</p>
         </div>
-        <div class="p-8 mx-2 my-4 md:my-8 rounded-lg shadow-lg" style="max-width: 350px;">
+        <div class="slideInUp delay-2 p-8 mx-2 my-4 md:my-8 rounded-lg shadow-lg" style="max-width: 350px;">
             <h1 class="text-2xl text-blue-700" style="font-family: FluentIconsFilled;"></h1>
             <h2 class="text-2xl font-bold">Dark theme</h2>
             <p>If you work a lot of time, your eyes might get tired of the light theme and this is why we've made a dark
@@ -112,7 +113,7 @@
     </script>
 
     <div class="flex justify-center">
-        <img src="img/screenshot1.png">
+        <img class="onViewedAnimation opacity-0" src="img/screenshot1.png">
     </div>
 
     <div id="download" class="m-8 flex flex-col items-center">
@@ -150,6 +151,7 @@
 
     <script src="scripts/copyright.js"></script>
     <script src="scripts/scroll.js"></script>
+    <script src="scripts/animations.js"></script>
 
 </body>
 
