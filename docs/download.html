@@ -81,35 +81,31 @@
         <img class="slideInUp hidden sm:block" src="img/Datalya.png" style="max-height: 200px;">
     </div>
 
-    <div id="download" class="my-8 flex flex-col p-8 items-start">
-        <h1 class="text-3xl font-bold">System Requirements</h1>
-        <table class="table-auto my-4 text-blue-700 border-collapse">
-            <tr>
-                <th class="border border-blue-700 p-2 bg-blue-100 hidden sm:table-cell"></th>
-                <th class="border border-blue-700 p-2 bg-blue-100">Minimum</th>
-                <th class="border border-blue-700 p-2 bg-blue-100">Recommanded</th>
-            </tr>
-            <tr>
-                <td class="border border-blue-700 p-2 font-bold hidden sm:table-cell">Stockage</td>
-                <td class="border border-blue-700 p-2">1GB of storage</td>
-                <td class="border border-blue-700 p-2">1GB of storage</td>
-            </tr>
-            <tr>
-                <td class="border border-blue-700 p-2 font-bold hidden sm:table-cell">Memory</td>
-                <td class="border border-blue-700 p-2">2GB RAM</td>
-                <td class="border border-blue-700 p-2">4GB RAM</td>
-            </tr>
-            <tr>
-                <td class="border border-blue-700 p-2 font-bold hidden sm:table-cell">Operating System</td>
-                <td class="border border-blue-700 p-2">Windows 7</td>
-                <td class="border border-blue-700 p-2">Windows 10 and +</td>
-            </tr>
-            <tr>
-                <td class="border border-blue-700 p-2 font-bold hidden sm:table-cell">Framework</td>
-                <td class="border border-blue-700 p-2">.NET 5</td>
-                <td class="border border-blue-700 p-2">.NET 5</td>
-            </tr>
-        </table>
+    <div id="download" class="my-8 flex flex-col p-8">
+        <h1 class="text-3xl font-bold flex text-center">System Requirements</h1>
+        <div id="required-configuration" class="sm:m-4 m-2 rounded-lg sm:p-8 p-4 bg-gray-100">
+            <h2 class="font-bold text-2xl m-2">Required configuration</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 sm:place-items-start place-items-center">
+                <div>
+                    <h3 class="ml-2 font-bold ">Minimum</h3>
+                    <ul class="list-disc ml-6">
+                        <li>Windows 7 SP1</li>
+                        <li>.NET 5</li>
+                        <li>2 GB of RAM</li>
+                        <li>Less than 1 GB of stockage</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="ml-2 font-bold">Recommanded</h3>
+                    <ul class="list-disc ml-6">
+                        <li>Windows 10</li>
+                        <li>.NET 5</li>
+                        <li>4 GB of RAM</li>
+                        <li>Less than 1 GB of stockage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </div>
 
